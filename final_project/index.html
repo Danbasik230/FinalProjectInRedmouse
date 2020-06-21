@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en-EN, ru-RU">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Open+Sans:400,800|PT+Sans:400,700|Pacifico&display=swap" rel="stylesheet">
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.js"
+    integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+    crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $(".header__list_menuitem").hide();
+            $(".header__list_menuitem .header__links:odd").css("background-color", "#2c1a26");
+            $(".header__list_menu .expand").click(function(){
+                $(this).parent().next().slideToggle();
+            });
+        });
+        </script>
+    <title>Template</title>
+</head>
+<body>
+    <div class="header__background">
+        <header class="header">
+            <h1 class="header__name"><a href="index.html" class="header__name-first">Business Name</a></h1>
+                <div class="box">
+            <h3 class="header__list_menu">Меню<span class="expand">▬</span></h3>
+            <ul class="header__list_menuitem">
+                        <li class="header__links"><a href="#" class="header__link">Home</a></li>  
+                        <li class="header__links"><a href="#Services" class="header__link">Services</a></li>
+                        <li class="header__links"><a href="#About" class="header__link">About</a></li>
+                        <li class="header__links"><a href="#Portfolio" class="header__link">Portfolio</a></li>
+                        <li class="header__links"><a href="#Testimonials" class="header__link">Testimonials</a></li>
+                        <li class="header__links"><a href="#Contact" class="header__link">Contact</a></li>
+            </ul>
+        </div>
+            <ul class="header__list">
+                <li class="header__links"><a href="#" class="header__link">Home</a></li>  
+                <li class="header__links"><a href="#Services" class="header__link">Services</a></li>
+                <li class="header__links"><a href="#About" class="header__link">About</a></li>
+                <li class="header__links"><a href="#Portfolio" class="header__link">Portfolio</a></li>
+                <li class="header__links"><a href="#Testimonials" class="header__link">Testimonials</a></li>
+                <li class="header__links"><a href="#Contact" class="header__link">Contact</a></li>
+            </ul>
+            <div class="slideshow">
+
+                <div class="mySlides fade">
+                <div class="slider__content">
+                    <p class="slider__text_first">1Simple,Fresh & Unique Design</p>
+                    <p class="slider__text_second">Donec posuere augue venenatis</p>
+                    <button class="slider__button">SHOW MORE</button>
+                </div>
+                </div>
+              
+                <div class="mySlides fade">
+              <div class="slider__content">
+                    <p class="slider__text_first">2Simple,Fresh & Unique Design</p>
+                    <p class="slider__text_second">Donec posuere augue venenatis</p>
+                    <button class="slider__button">SHOW MORE</button>
+                </div>
+                </div>
+              
+                <div class="mySlides fade">
+              <div class="slider__content">
+                    <p class="slider__text_first">3Simple,Fresh & Unique Design</p>
+                    <p class="slider__text_second">Donec posuere augue venenatis</p>
+                    <button class="slider__button">SHOW MORE</button>
+                </div>
+                </div>
+              
+                <a class="prev" onclick="plusSlides(-1)"></a>
+                <a class="next" onclick="plusSlides(1)"></a>
+                
+              </div>              
+
+              <div class="dots" style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+              </div> 
+
+        </header>
+    </div>    
+    <div class="wrapper">
+        <div class="service">
+            <div>
+            <p class="service__header" id="Services">What we offer</p>
+            <p class="service__headingtext">Vestibulum elementum ex ullamcorper ligula vulputate</p></div>
+            <div class="float__service">
+            <ul class="service__list">
+            <div class="service-right">
+                <div class="service__block">
+                    <img class="service__img" src="images/service/first.png" alt="#"><li class="service__inf">
+                        <p class="service__heading">Vivamus tincidunt </p>
+                        <p class="service__text">Fusce velit magna, rutrum id pellentesque in, imperdiet rutrum neque. Vestibulum elementum ex ullamcorper ligula vulputate, non malesuada nisi ullamcorper. Curabitur tellus ligula, laoreet vitae lectus vitae</p>
+                    </li></div>
+                <div class="service__block-second">
+                    <img class="service__img" src="images/service/second.png" alt="#"><li class="service__inf">
+                            <p class="service__heading">Etiam porttitor sagittis ipsum</p>
+                            <p class="service__text">Fusce velit magna, rutrum id pellentesque in, imperdiet rutrum neque. Vestibulum elementum ex ullamcorper ligula vulputate, non malesuada nisi ullamcorper. Curabitur tellus ligula, laoreet vitae lectus vitae</p>
+                    </li></div>
+                <div class="service__block">
+                    <img class="service__img" src="images/service/third.png" alt="#"><li class="service__inf">
+                            <p class="service__heading">Vivamus tincidunt diam a iaculis </p>
+                            <p class="service__text">Fusce velit magna, rutrum id pellentesque in, imperdiet rutrum neque. Vestibulum elementum ex ullamcorper ligula vulputate, non malesuada nisi ullamcorper. Curabitur tellus ligula, laoreet vitae lectus vitae</p>
+                    </li></div>
+                </div>
+                <div class="service-left">
+                <div class="service__block-second">
+                    <img class="service__img" src="images/service/fouth.png" alt="#"><li class="service__inf">
+                            <p class="service__heading">Donec metus augue</p>
+                            <p class="service__text">Fusce velit magna, rutrum id pellentesque in, imperdiet rutrum neque. Vestibulum elementum ex ullamcorper ligula vulputate, non malesuada nisi ullamcorper. Curabitur tellus ligula, laoreet vitae lectus vitae</p>
+                    </li></div>
+                <div class="service__block">
+                    <img class="service__img" src="images/service/fifth.png" alt="#"><li class="service__inf">
+                            <p class="service__heading">Aliquam sed mollis</p>
+                            <p class="service__text">Fusce velit magna, rutrum id pellentesque in, imperdiet rutrum neque. Vestibulum elementum ex ullamcorper ligula vulputate, non malesuada nisi ullamcorper. Curabitur tellus ligula, laoreet vitae lectus vitae</p>
+                    </li></div>
+                <div class="service__block-second">
+                    <img class="service__img" src="images/service/sixth.png" alt="#"><li class="service__inf">
+                            <p class="service__heading">Vestibulum placerat nisl quis </p>
+                            <p class="service__text">Fusce velit magna, rutrum id pellentesque in, imperdiet rutrum neque. Vestibulum elementum ex ullamcorper ligula vulputate, non malesuada nisi ullamcorper. Curabitur tellus ligula, laoreet vitae lectus vitae</p>
+                    </li></div>
+                </div>
+            </ul>
+        </div>
+        </div> 
+    </div> 
+        <div class="about" id="About">
+        <div class="about__img_wrapper">
+            <div class="about__img">
+            </div>
+        </div>
+            <div class="about__textarea">
+                <p class="about__heading">Who we are</p>
+                <p class="about__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dui massa, condimentum a nisl quis, tristique efficitur erat. Aenean ut suscipit urna. Donec efficitur tristique lobortis. Nullam eu efficitur lacus, et blandit tellus. Mauris viverra condimentum tellus vitae sollicitudin. Mauris quis mattis urna. Suspendisse auctor magna quis ipsum ultrices scelerisque. Vestibulum quis hendrerit enim. Aenean viverra aliquam ex, sed ornare risus porta in.</p>
+                <p class="about__text">Aenean ut suscipit urna. Donec efficitur tristique lobortis. Nullam eu efficitur lacus, et blandit tellus. Mauris viverra condimentum tellus vitae sollicitudin. Mauris quis mattis urna. Suspendisse auctor magna quis ipsum ultrices scelerisque. Vestibulum quis hendrerit enim. Aenean viverra aliquam ex, sed ornare risus porta in. Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis vel sit sapiente mollitia. Tenetur nesciunt velit recusandae laboriosam id blanditiis reiciendis officia! Error ex repudiandae accusamus similique. Molestiae officia repellendus, laboriosam recusandae dolore atque explicabo culpa exercitationem laudantium ea ut rerum dignissimos ipsam, rem sunt voluptatum, eos sint pariatur illum!</p>
+                <div class="button__container">
+                        <a href="#" class="btn"><span class="btn__about_style">READ MORE</span></a>
+                      </div>
+            </div>
+        </div>
+        <div class="portfolio">
+            <p class="portfolio__heading">SEE OUR WORKS</p>
+            <div class="portfolio__hr" id="Portfolio"></div>
+            <p class="portfolio__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto, reprehenderit voluptates consectetur ullam nam voluptate labore iure optio animi repellat officiis tenetur nulla quos fuga.</p>
+            <div class="wrapper__tabs">
+                <div class="tabs">
+                    <div class="tab">All</div>
+                    <div class="tab">Web</div>
+                    <div class="tab">Logo Design</div>
+                    <div class="tab">WordPress</div>
+                    <div class="tab">E-commerce</div>
+                </div>
+            </div>  
+                <div class="tabs_content">
+                    <div class="wrapper__for_tabs">
+                    <div class="tab_item">
+                        <div class="img__wrap">
+                            <img class="img__img" src="images/portfolio/image/second.png" />
+                            <div class="img__description_layer">
+                                <img src="images/portfolio/image/hover/Shape 296.png" alt="" class="eye">
+                              <p class="img__description">Labore et dolore magnam </p>
+                              <p class="img__description_second">Wordpress</p>
+                            </div>
+                          </div>
+
+                        <div class="img__wrap">
+                            <img class="img__img" src="images/portfolio/image/first.png" />
+                            <div class="img__description_layer">
+                                <img src="images/portfolio/image/hover/Shape 296.png" alt="" class="eye">
+                                <p class="img__description">Labore et dolore magnam </p>
+                                <p class="img__description_second">Wordpress</p>
+                            </div>
+                        </div>
+
+                        <div class="img__wrap">
+                            <img class="img__img" src="images/portfolio/image/fourth.png" />
+                            <div class="img__description_layer">
+                                <img src="images/portfolio/image/hover/Shape 296.png" alt="" class="eye">
+                                <p class="img__description">Labore et dolore magnam </p>
+                                <p class="img__description_second">Wordpress</p>
+                            </div>
+                        </div>
+
+                        <div class="img__wrap">
+                                <img class="img__img" src="images/portfolio/image/third.png" />
+                                <div class="img__description_layer">
+                                    <img src="images/portfolio/image/hover/Shape 296.png" alt="" class="eye">
+                                    <p class="img__description">Labore et dolore magnam </p>
+                                    <p class="img__description_second">Wordpress</p>
+                                </div>
+                            </div>
+
+
+                    <div class="img__wrap">
+                            <img class="img__img" src="images/portfolio/image/sixth.png" />
+                            <div class="img__description_layer">
+                                <img src="images/portfolio/image/hover/Shape 296.png" alt="" class="eye">
+                                <p class="img__description">Labore et dolore magnam </p>
+                                <p class="img__description_second">Wordpress</p>
+                            </div>
+                        </div>
+
+                        <div class="img__wrap">
+                                <img class="img__img" src="images/portfolio/image/fifth.png" />
+                                <div class="img__description_layer">
+                                    <img src="images/portfolio/image/hover/Shape 296.png" alt="" class="eye">
+                                    <p class="img__description">Labore et dolore magnam </p>
+                                    <p class="img__description_second">Wordpress</p>
+                                </div>
+                            </div>
+
+                            <div class="img__wrap">
+                                    <img class="img__img" src="images/portfolio/image/seventh.png" />
+                                    <div class="img__description_layer">
+                                        <img src="images/portfolio/image/hover/Shape 296.png" alt="" class="eye">
+                                        <p class="img__description">Labore et dolore magnam </p>
+                                        <p class="img__description_second">Wordpress</p>
+                                    </div>
+                                </div>
+
+                                <div class="img__wrap">
+                                        <img class="img__img" src="images/portfolio/image/eighth.png" />
+                                        <div class="img__description_layer">
+                                            <img src="images/portfolio/image/hover/Shape 296.png" alt="" class="eye">
+                                            <p class="img__description">Labore et dolore magnam </p>
+                                            <p class="img__description_second">Wordpress</p>
+                                        </div>
+                                    </div>
+                            </div>
+                    
+                    <div class="tab_item">                        
+                        <div class="img__wrap">
+                            <img class="img__img" src="images/portfolio/image/first.png" />
+                            <div class="img__description_layer">
+                                <img src="images/portfolio/image/hover/Shape 296.png" alt="" class="eye">
+                              <p class="img__description">Labore et dolore magnam </p>
+                              <p class="img__description_second">Wordpress</p>
+                            </div>
+                          </div>
+
+                        <div class="img__wrap">
+                            <img class="img__img" src="images/portfolio/image/second.png" />
+                            <div class="img__description_layer">
+                                <img src="images/portfolio/image/hover/Shape 296.png" alt="" class="eye">
+                                <p class="img__description">Labore et dolore magnam </p>
+                                <p class="img__description_second">Wordpress</p>
+                            </div>
+                        </div>
+
+                        <div class="img__wrap">
+                            <img class="img__img" src="images/portfolio/image/third.png" />
+                            <div class="img__description_layer">
+                                <img src="images/portfolio/image/hover/Shape 296.png" alt="" class="eye">
+                                <p class="img__description">Labore et dolore magnam </p>
+                                <p class="img__description_second">Wordpress</p>
+                            </div>
+                        </div>
+
+                        <div class="img__wrap">
+                                <img class="img__img" src="images/portfolio/image/fourth.png" />
+                                <div class="img__description_layer">
+                                    <img src="images/portfolio/image/hover/Shape 296.png" alt="" class="eye">
+                                    <p class="img__description">Labore et dolore magnam </p>
+                                    <p class="img__description_second">Wordpress</p>
+                                </div>
+                            </div>
+
+
+                    <div class="img__wrap">
+                            <img class="img__img" src="images/portfolio/image/fifth.png" />
+                            <div class="img__description_layer">
+                                <img src="images/portfolio/image/hover/Shape 296.png" alt="" class="eye">
+                                <p class="img__description">Labore et dolore magnam </p>
+                                <p class="img__description_second">Wordpress</p>
+                            </div>
+                        </div>
+
+                        <div class="img__wrap">
+                                <img class="img__img" src="images/portfolio/image/sixth.png" />
+                                <div class="img__description_layer">
+                                    <img src="images/portfolio/image/hover/Shape 296.png" alt="" class="eye">
+                                    <p class="img__description">Labore et dolore magnam </p>
+                                    <p class="img__description_second">Wordpress</p>
+                                </div>
+                            </div>
+
+                            <div class="img__wrap">
+                                    <img class="img__img" src="images/portfolio/image/eighth.png" />
+                                    <div class="img__description_layer">
+                                        <img src="images/portfolio/image/hover/Shape 296.png" alt="" class="eye">
+                                        <p class="img__description">Labore et dolore magnam </p>
+                                        <p class="img__description_second">Wordpress</p>
+                                    </div>
+                                </div>
+
+                                <div class="img__wrap">
+                                        <img class="img__img" src="images/portfolio/image/seventh.png" />
+                                        <div class="img__description_layer">
+                                            <img src="images/portfolio/image/hover/Shape 296.png" alt="" class="eye">
+                                            <p class="img__description">Labore et dolore magnam </p>
+                                            <p class="img__description_second">Wordpress</p>
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+                    <div class="tab_item">                        <div class="img__wrap">
+                            <img class="img__img" src="images/portfolio/image/imagessecond/3.jpg" />
+                            <div class="img__description_layer">
+                                <img src="images/portfolio/image/hover/Shape 296.png" alt="" class="eye">
+                              <p class="img__description">Labore et dolore magnam </p>
+                              <p class="img__description_second">Wordpress</p>
+                            </div>
+                          </div>
+
+                        <div class="img__wrap">
+                            <img class="img__img" src="images/portfolio/image/imagessecond/2222.jpg" />
+                            <div class="img__description_layer">
+                                <img src="images/portfolio/image/hover/Shape 296.png" alt="" class="eye">
+                                <p class="img__description">Labore et dolore magnam </p>
+                                <p class="img__description_second">Wordpress</p>
+                            </div>
+                        </div>
+
+                        <div class="img__wrap">
+                            <img class="img__img" src="images/portfolio/image/imagessecond/222.jpg" />
+                            <div class="img__description_layer">
+                                <img src="images/portfolio/image/hover/Shape 296.png" alt="" class="eye">
+                                <p class="img__description">Labore et dolore magnam </p>
+                                <p class="img__description_second">Wordpress</p>
+                            </div>
+                        </div>
+
+                        <div class="img__wrap">
+                                <img class="img__img" src="images/portfolio/image/imagessecond/22.jpg" />
+                                <div class="img__description_layer">
+                                    <img src="images/portfolio/image/hover/Shape 296.png" alt="" class="eye">
+                                    <p class="img__description">Labore et dolore magnam </p>
+                                    <p class="img__description_second">Wordpress</p>
+                                </div>
+                            </div>
+
+
+                    <div class="img__wrap">
+                            <img class="img__img" src="images/portfolio/image/imagessecond/2.jpg" />
+                            <div class="img__description_layer">
+                                <img src="images/portfolio/image/hover/Shape 296.png" alt="" class="eye">
+                                <p class="img__description">Labore et dolore magnam </p>
+                                <p class="img__description_second">Wordpress</p>
+                            </div>
+                        </div>
+
+                        <div class="img__wrap">
+                                <img class="img__img" src="images/portfolio/image/imagessecond/1111.jpg" />
+                                <div class="img__description_layer">
+                                    <img src="images/portfolio/image/hover/Shape 296.png" alt="" class="eye">
+                                    <p class="img__description">Labore et dolore magnam </p>
+                                    <p class="img__description_second">Wordpress</p>
+                                </div>
+                            </div>
+
+                            <div class="img__wrap">
+                                    <img class="img__img" src="images/portfolio/image/imagessecond/11.jpg" />
+                                    <div class="img__description_layer">
+                                        <img src="images/portfolio/image/hover/Shape 296.png" alt="" class="eye">
+                                        <p class="img__description">Labore et dolore magnam </p>
+                                        <p class="img__description_second">Wordpress</p>
+                                    </div>
+                                </div>
+
+                                <div class="img__wrap">
+                                        <img class="img__img" src="images/portfolio/image/imagessecond/1.jpg" />
+                                        <div class="img__description_layer">
+                                            <img src="images/portfolio/image/hover/Shape 296.png" alt="" class="eye">
+                                            <p class="img__description">Labore et dolore magnam </p>
+                                            <p class="img__description_second">Wordpress</p>
+                                        </div>
+                                    </div>
+                            </div>
+                        </div></div>
+                    <div class="tab_item">
+                            <div class="img__wrap">
+                                    <img class="img__img" src="images/portfolio/image/imagessecond/55.jpg" />
+                                    <div class="img__description_layer">
+                                        <img src="images/portfolio/image/hover/Shape 296.png" alt="" class="eye">
+                                      <p class="img__description">Labore et dolore magnam </p>
+                                      <p class="img__description_second">Wordpress</p>
+                                    </div>
+                                  </div>
+        
+                                <div class="img__wrap">
+                                    <img class="img__img" src="images/portfolio/image/imagessecond/5.jpg" />
+                                    <div class="img__description_layer">
+                                        <img src="images/portfolio/image/hover/Shape 296.png" alt="" class="eye">
+                                        <p class="img__description">Labore et dolore magnam </p>
+                                        <p class="img__description_second">Wordpress</p>
+                                    </div>
+                                </div>
+        
+                                <div class="img__wrap">
+                                    <img class="img__img" src="images/portfolio/image/imagessecond/444.jpg" />
+                                    <div class="img__description_layer">
+                                        <img src="images/portfolio/image/hover/Shape 296.png" alt="" class="eye">
+                                        <p class="img__description">Labore et dolore magnam </p>
+                                        <p class="img__description_second">Wordpress</p>
+                                    </div>
+                                </div>
+        
+                                <div class="img__wrap">
+                                        <img class="img__img" src="images/portfolio/image/imagessecond/44.jpg" />
+                                        <div class="img__description_layer">
+                                            <img src="images/portfolio/image/hover/Shape 296.png" alt="" class="eye">
+                                            <p class="img__description">Labore et dolore magnam </p>
+                                            <p class="img__description_second">Wordpress</p>
+                                        </div>
+                                    </div>
+        
+        
+                            <div class="img__wrap">
+                                    <img class="img__img" src="images/portfolio/image/imagessecond/4.jpg" />
+                                    <div class="img__description_layer">
+                                        <img src="images/portfolio/image/hover/Shape 296.png" alt="" class="eye">
+                                        <p class="img__description">Labore et dolore magnam </p>
+                                        <p class="img__description_second">Wordpress</p>
+                                    </div>
+                                </div>
+        
+                                <div class="img__wrap">
+                                        <img class="img__img" src="images/portfolio/image/imagessecond/3333.jpg" />
+                                        <div class="img__description_layer">
+                                            <img src="images/portfolio/image/hover/Shape 296.png" alt="" class="eye">
+                                            <p class="img__description">Labore et dolore magnam </p>
+                                            <p class="img__description_second">Wordpress</p>
+                                        </div>
+                                    </div>
+        
+                                    <div class="img__wrap">
+                                            <img class="img__img" src="images/portfolio/image/imagessecond/333.png" />
+                                            <div class="img__description_layer">
+                                                <img src="images/portfolio/image/hover/Shape 296.png" alt="" class="eye">
+                                                <p class="img__description">Labore et dolore magnam </p>
+                                                <p class="img__description_second">Wordpress</p>
+                                            </div>
+                                        </div>
+        
+                                        <div class="img__wrap">
+                                                <img class="img__img" src="images/portfolio/image/imagessecond/33.jpg" />
+                                                <div class="img__description_layer">
+                                                    <img src="images/portfolio/image/hover/Shape 296.png" alt="" class="eye">
+                                                    <p class="img__description">Labore et dolore magnam </p>
+                                                    <p class="img__description_second">Wordpress</p>
+                                                </div>
+                                            </div>
+                                    </div>
+                                </div>
+                    </div>
+                    <div class="tab_item">
+                            <div class="img__wrap">
+                                    <img class="img__img" src="images/portfolio/image/imagessecond/777.jpeg" />
+                                    <div class="img__description_layer">
+                                        <img src="images/portfolio/image/hover/Shape 296.png" alt="" class="eye">
+                                      <p class="img__description">Labore et dolore magnam </p>
+                                      <p class="img__description_second">Wordpress</p>
+                                    </div>
+                                  </div>
+        
+                                <div class="img__wrap">
+                                    <img class="img__img" src="images/portfolio/image/imagessecond/77.jpg" />
+                                    <div class="img__description_layer">
+                                        <img src="images/portfolio/image/hover/Shape 296.png" alt="" class="eye">
+                                        <p class="img__description">Labore et dolore magnam </p>
+                                        <p class="img__description_second">Wordpress</p>
+                                    </div>
+                                </div>
+        
+                                <div class="img__wrap">
+                                    <img class="img__img" src="images/portfolio/image/imagessecond/7.jpg" />
+                                    <div class="img__description_layer">
+                                        <img src="images/portfolio/image/hover/Shape 296.png" alt="" class="eye">
+                                        <p class="img__description">Labore et dolore magnam </p>
+                                        <p class="img__description_second">Wordpress</p>
+                                    </div>
+                                </div>
+        
+                                <div class="img__wrap">
+                                        <img class="img__img" src="images/portfolio/image/imagessecond/666.jpg" />
+                                        <div class="img__description_layer">
+                                            <img src="images/portfolio/image/hover/Shape 296.png" alt="" class="eye">
+                                            <p class="img__description">Labore et dolore magnam </p>
+                                            <p class="img__description_second">Wordpress</p>
+                                        </div>
+                                    </div>
+        
+        
+                            <div class="img__wrap">
+                                    <img class="img__img" src="images/portfolio/image/imagessecond/66.jpeg" />
+                                    <div class="img__description_layer">
+                                        <img src="images/portfolio/image/hover/Shape 296.png" alt="" class="eye">
+                                        <p class="img__description">Labore et dolore magnam </p>
+                                        <p class="img__description_second">Wordpress</p>
+                                    </div>
+                                </div>
+        
+                                <div class="img__wrap">
+                                        <img class="img__img" src="images/portfolio/image/imagessecond/6.jpg" />
+                                        <div class="img__description_layer">
+                                            <img src="images/portfolio/image/hover/Shape 296.png" alt="" class="eye">
+                                            <p class="img__description">Labore et dolore magnam </p>
+                                            <p class="img__description_second">Wordpress</p>
+                                        </div>
+                                    </div>
+        
+                                    <div class="img__wrap">
+                                            <img class="img__img" src="images/portfolio/image/imagessecond/555.jpg" />
+                                            <div class="img__description_layer">
+                                                <img src="images/portfolio/image/hover/Shape 296.png" alt="" class="eye">
+                                                <p class="img__description">Labore et dolore magnam </p>
+                                                <p class="img__description_second">Wordpress</p>
+                                            </div>
+                                        </div>
+        
+                                        <div class="img__wrap">
+                                                <img class="img__img" src="images/portfolio/image/imagessecond/55.jpg" />
+                                                <div class="img__description_layer">
+                                                    <img src="images/portfolio/image/hover/Shape 296.png" alt="" class="eye">
+                                                    <p class="img__description">Labore et dolore magnam </p>
+                                                    <p class="img__description_second">Wordpress</p>
+                                                </div>
+                                            </div>
+                                    </div>
+                                </div>
+                    </div>
+                </div>
+                </div>
+                   
+        </div>
+        <div class="testimonials" id="Testimonials">
+                <p class="tesimonials__headertext">Testimonials</p>
+                <div class="testimonial__hr"></div>
+
+
+
+
+                <div class="slideshow__tesimonials">
+
+                    <div class="mySlides__testimonials fade__testimpnials">
+                    <div class="slider__content__tesimonials">
+                        <div class="testimonials__content_first">
+                          <img src="images/testimonials/box.png" alt="" class=" box_first">
+                          <div class="testimonials__text">1Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia blanditiis, laborum repudiandae aut ex dicta minus expedita eaque eum modi voluptates. Nihil, modi, veritatis? Voluptatum laboriosam et sed, facilis vel deserunt ut qui quam odit, vero debitis beatae non perspiciatis.</div>
+                          <p class="testimonials__name">-Jon Doe, Company inc</p>
+                  
+                        </div>
+                        <div class="testimonials__content_second">
+                                  <img src="images/testimonials/box.png" alt="" class=" box_second">
+                          <div class="testimonials__text">2Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia blanditiis, laborum repudiandae aut ex dicta minus expedita eaque eum modi voluptates. Nihil, modi, veritatis? Voluptatum laboriosam et sed, facilis vel deserunt ut qui quam odit, vero debitis beatae non perspiciatis.</div>
+                          <p class="testimonials__name">-Jon Doe, Company inc</p>
+                  
+                        </div>
+                    </div>
+                    </div>
+                  
+                    <div class="mySlides__testimonials fade">
+                  <div class="slider__content__tesimonials">
+                        <div class="testimonials__content_first">
+                                  <img src="images/testimonials/box.png" alt="" class="box_first">
+                          <div class="testimonials__text">3Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia blanditiis, laborum repudiandae aut ex dicta minus expedita eaque eum modi voluptates. Nihil, modi, veritatis? Voluptatum laboriosam et sed, facilis vel deserunt ut qui quam odit, vero debitis beatae non perspiciatis.</div>
+                          <p class="testimonials__name">-Jon Doe, Company inc</p>
+                  
+                        </div>
+                        <div class="testimonials__content_second">
+                                  <img src="images/testimonials/box.png" alt="" class="box_second">
+                          <div class="testimonials__text">4Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia blanditiis, laborum repudiandae aut ex dicta minus expedita eaque eum modi voluptates. Nihil, modi, veritatis? Voluptatum laboriosam et sed, facilis vel deserunt ut qui quam odit, vero debitis beatae non perspiciatis.</div>
+                          <p class="testimonials__name">-Jon Doe, Company inc</p>
+                  
+                        </div>
+                    </div>
+                    </div>
+                  
+                    <div class="mySlides__testimonials fade">
+                  <div class="slider__content__tesimonials">
+                        <div class="testimonials__content_first">
+                                  <img src="images/testimonials/box.png" alt="" class="box_first">
+                          <div class="testimonials__text">5Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia blanditiis, laborum repudiandae aut ex dicta minus expedita eaque eum modi voluptates. Nihil, modi, veritatis? Voluptatum laboriosam et sed, facilis vel deserunt ut qui quam odit, vero debitis beatae non perspiciatis.</div>
+                          <p class="testimonials__name">-Jon Doe, Company inc</p>
+                  
+                        </div>
+                        <div class="testimonials__content_second">
+                                  <img src="images/testimonials/box.png" alt="" class="box_second">
+                          <div class="testimonials__text">6Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia blanditiis, laborum repudiandae aut ex dicta minus expedita eaque eum modi voluptates. Nihil, modi, veritatis? Voluptatum laboriosam et sed, facilis vel deserunt ut qui quam odit, vero debitis beatae non perspiciatis.</div>
+                          <p class="testimonials__name">-Jon Doe, Company inc</p>
+                  
+                        </div>
+                    </div>
+                    </div>
+                  
+                    <div class="mySlides__testimonials fade">
+                  <div class="slider__content__tesimonials">
+                        <div class="testimonials__content_first">
+                                  <img src="images/testimonials/box.png" alt="" class="box_first">
+                          <div class="testimonials__text">7Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia blanditiis, laborum repudiandae aut ex dicta minus expedita eaque eum modi voluptates. Nihil, modi, veritatis? Voluptatum laboriosam et sed, facilis vel deserunt ut qui quam odit, vero debitis beatae non perspiciatis.</div>
+                          <p class="testimonials__name">-Jon Doe, Company inc</p>
+                  
+                        </div>
+                        <div class="testimonials__content_second">
+                                  <img src="images/testimonials/box.png" alt="" class="box_second">
+                          <div class="testimonials__text">8Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia blanditiis, laborum repudiandae aut ex dicta minus expedita eaque eum modi voluptates. Nihil, modi, veritatis? Voluptatum laboriosam et sed, facilis vel deserunt ut qui quam odit, vero debitis beatae non perspiciatis.</div>
+                          <p class="testimonials__name">-Jon Doe, Company inc</p>
+                  
+                        </div>
+                    </div>
+                    </div>
+                  
+                    <a class="prev__testimpnials" onclick="plusSlidestestimonials(-1)"></a>
+                    <a class="next__testimpnials" onclick="plusSlidestestimonials(1)"></a>
+                    
+                  </div>
+                  <br>
+                  
+                  <div style="text-align:center" class="dots__testimpnials">
+                    <span class="dot__testimpnials" onclick="currentSlidetestimonials(1)"></span>
+                    <span class="dot__testimpnials" onclick="currentSlidetestimonials(2)"></span>
+                    <span class="dot__testimpnials" onclick="currentSlidetestimonials(3)"></span>
+                    <span class="dot__testimpnials" onclick="currentSlidetestimonials(3)"></span>
+                  </div> 
+
+
+
+
+
+                
+        </div>
+        <div class="contact" id="Contact">
+            <div class="contact__wrapper">
+                <div class="contact__first">
+                    <h1 class="contact__name-first">Bussines Name</h1>
+                    <p class="contact__text">Donec vitae cursus quam. Etiam dignissim, nulla a congue auctor, massa urna cursus enim, id sodales elit ligula quis diam. Morbi ut semper augue. Fusce sit amet lectus turpis. Integer a cursus tellus, et imperdiet purus. Donec sed orci placerat, vulputate risus id, faucibus massa. Mauris justo arcu, faucibus at nunc quis</p>
+                </div>
+                <div class="contact__first">
+                    <p class="contact__name__second">Contact</p>
+                    <p class="contact__text">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in so</p>
+                    <ul class="contact__list">
+                        <div class="contact__images">
+                            <img src="images/footer/geo.png" alt="geo" class="contact__img">
+                            <img src="images/footer/mail.png" alt="mail" class="contact__img">
+                            <img src="images/footer/phone.png" alt="phone" class="contact__img">                        
+                        </div>        
+                        <div class="contact__wrapper_list">               
+                        <li class="contact__links"><a href="https://www.google.ru/maps/place/Redmouse/@42.8306284,74.6225394,15z/data=!4m8!1m2!2m1!1z0YDQtdC00LzQsNGD0YEg0LHQuNGI0LrQtdC6!3m4!1s0x0:0x27c3c08390365fb6!8m2!3d42.8317597!4d74.6314412" class="contact__link">Redmouse</a></li>
+                        <li class="contact__links"><a href="https://www.google.com/intl/ru/gmail/about/" class="contact__link">danbas@gmail.com</a></li>
+                        <li class="contact__links"><a href="http://kt.kg/about_us/contact/bgts1/" class="contact__link">+996705549527</a></li>
+                        </div> 
+
+                    </ul>
+                </div>
+                <div class="contact__first">
+                        <p class="contact__name__second">Latest Tweets</p>
+                        
+                </div>
+                <div class="contact__first">
+                        <p class="contact__name__second">News Letter</p>
+                        <p class="contact__text">Type your email address below and recive our daily news letter for free</p>
+                        <form name="test" method="post" action="input" class="request__list">
+                        <input type="text" placeholder="Email Address" class="request__item-email"></input>
+                        <button type="submit" class="request__button">Submit</button>
+                        </form>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="footer__wrapper">
+            <div class="footer__text">© 2015 Business name.All rights reserved.</div>
+            <div class="footer__text_first">Designed by Colorpixels.net</div>
+            <div class="footer__images">
+                <div class="footer__img"><a href="https://twitter.com/?lang=ru"><img src="images/footer/twitter.png" alt="" class="image__footer"></a></div>
+                <div class="footer__img"><a href="https://www.facebook.com/"><img src="images/footer/facebook-logo.png" alt="" class="image__footer"></a></div>
+                <div class="footer__img"><a href="https://ru.linkedin.com/"><img src="images/footer/linkedin.png" alt="" class="image__footer"></a></div>
+            </div>
+        </div>
+        </footer>
+
+
+        <script src="js/script.js"></script>
+</body>
+</html>
